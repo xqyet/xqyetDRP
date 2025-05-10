@@ -8,8 +8,8 @@ namespace DiscordRichPresenceTest
     {
         static void Main(string[] args)
         {
-            
-            string clientId = "";
+
+            string clientId = "1367836806032265278";
 
             var client = new DiscordRpcClient(clientId);
 
@@ -19,14 +19,14 @@ namespace DiscordRichPresenceTest
 
             client.SetPresence(new RichPresence()
             {
-                Details = "VS IDE",
-                State = "Windows 10",
+                Details = "Playing Online Mode",
+                State = "In a Lobby",
                 Assets = new Assets()
                 {
-                    LargeImageKey = "beats",               
-                    LargeImageText = "Visual Studio 2022",
-                    SmallImageKey = "beats",          
-                    SmallImageText = "Visual Studio 2022"
+                    LargeImageKey = "gta",
+                    LargeImageText = "Grand Theft Auto VI",
+                    SmallImageKey = "gta",
+                    SmallImageText = "Grand Theft Auto VI"
                 }
             });
 
